@@ -10,10 +10,17 @@ html {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  overflow-x: hidden;
 }
 
 body {
   flex-grow: 1;
+  overflow-x: hidden; 
+}
+
+.app-ctn {
+  position: relative;
+  overflow-x: hidden;
 }
 
 a,
