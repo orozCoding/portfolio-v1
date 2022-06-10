@@ -3,15 +3,15 @@ import items from "./MenuItems"
 
 const NavBar = () => {
   const renderItems = () => {
-    return items.map((i) => {
+    return items.map((i, index) => {
       return (
-        <a href={i.url}>
-          <li key={items.indexOf(i)} className={i.cName}>
+        <li key={index} className={i.cName}>
+          <a href={i.url}>
             {i.title}
-          </li>
-        </a>
-      )
-    })
+          </a>
+        </li>
+      );
+    });
   }
 
   return (
