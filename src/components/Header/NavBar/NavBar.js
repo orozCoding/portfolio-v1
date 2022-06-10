@@ -7,7 +7,7 @@ const NavBar = () => {
 
   const scrollTo = (refId) => {
     const ref = document.getElementById(`${refId}`)
-    ref.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    ref.scrollIntoView()
   }
 
   const renderItems = () => {
@@ -20,15 +20,16 @@ const NavBar = () => {
             }
             scrollTo(i.refId)
           }}>
-          {i.title}
-
+          <p>
+            {i.title}
+          </p>
         </li>
       );
     });
   }
 
   return (
-    <div className="nav-ctn d-flex">
+    <div className='nav-ctn d-flex'>
       <i className={`nav-burger click
       ${burgerClicked ? 'bi bi-x-lg' : 'bi bi-list'}`}
         onClick={() => setBurgerClicked(!burgerClicked)}></i>
