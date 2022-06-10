@@ -5,7 +5,11 @@ const NavBar = () => {
   const renderItems = () => {
     return items.map((i) => {
       return (
-        <li key={items.indexOf(i)} className={i.cName}>{i.title}</li>
+        <a href={i.url}>
+          <li key={items.indexOf(i)} className={i.cName}>
+            {i.title}
+          </li>
+        </a>
       )
     })
   }
@@ -14,7 +18,6 @@ const NavBar = () => {
     <div>
       <p>Hello from NavBar</p>
       <ul>
-        <li>First el</li>
         {renderItems()}
       </ul>
     </div>
