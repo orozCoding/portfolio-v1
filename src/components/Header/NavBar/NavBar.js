@@ -4,18 +4,26 @@ import './NavBar.css'
 
 const NavBar = () => {
   const [burgerClicked, setBurgerClicked] = useState(false)
+
+
+  const scrollTo = (id) => {
+    const ref = document.getElementById(`${id}`)
+    ref.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+
   const renderItems = () => {
     return items.map((i, index) => {
       return (
-        <li key={index} className={i.cName}>
-          <a href={i.url}
-            onClick={() => {
-              if (window.innerWidth <= 600) {
-                setBurgerClicked(!burgerClicked)
-              }
-            }}>
-            {i.title}
-          </a>
+        <li key={index} className={i.cName}
+          onClick={() => {
+            if (window.innerWidth <= 600) {
+              setBurgerClicked(!burgerClicked)
+            }
+            scrollTo(i.ref)
+          }}>
+          {i.title}
+
         </li>
       );
     });
