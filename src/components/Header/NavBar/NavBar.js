@@ -5,12 +5,10 @@ import './NavBar.css'
 const NavBar = () => {
   const [burgerClicked, setBurgerClicked] = useState(false)
 
-
-  const scrollTo = (id) => {
-    const ref = document.getElementById(`${id}`)
+  const scrollTo = (refId) => {
+    const ref = document.getElementById(`${refId}`)
     ref.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
-
 
   const renderItems = () => {
     return items.map((i, index) => {
@@ -20,7 +18,7 @@ const NavBar = () => {
             if (window.innerWidth <= 600) {
               setBurgerClicked(!burgerClicked)
             }
-            scrollTo(i.ref)
+            scrollTo(i.refId)
           }}>
           {i.title}
 

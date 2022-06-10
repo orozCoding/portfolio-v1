@@ -6,12 +6,14 @@ function App() {
 
   return (
     <div className="app-ctn">
-      <Header  />
+      <Header />
       <p >bellow header</p>
-      <section style={{ 'minHeight': '100vh' }}></section>
-      <section  style={{ 'minHeight': '100vh' }}>Very far!</section>
-      <section id={'again'}
+      <section id={'about'}
       style={{ 'minHeight': '100vh' }}>About</section>
+      <section id={'works'}
+      style={{ 'minHeight': '100vh' }}>Works</section>
+      <section id={'contact'}
+        style={{ 'minHeight': '100vh' }}>Contact</section>
     </div>
   );
 }
