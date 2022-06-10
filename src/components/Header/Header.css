@@ -1,0 +1,6 @@
+.header {
+  width: 100%;
+  background-color: rgb(202, 202, 202);
+  padding: 20px 20px;
+  justify-content: space-between;
+}

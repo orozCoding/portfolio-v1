@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
+import Header from './components/Header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <p>Hello from App!</p>
-      <NavBar />
+    <div className="app-ctn">
+      <Header />
+      <div style={{'minHeight': '100vh'}}></div>
+      <p style={{'minHeight': '100vh'}}>Very far!</p>
+      <p>Very far again!!</p>
     </div>
   );
 }

@@ -2,17 +2,17 @@ const menuItems = [
   {
     title: 'About',
     url: '#',
-    cName: 'nav-link'
+    cName: 'nav-item click'
   },
   {
     title: 'Works',
     url: '#',
-    cName: 'nav-link'
+    cName: 'nav-item click'
   },
   {
     title: 'Contact',
     url: '#',
-    cName: 'nav-link'
+    cName: 'nav-item click'
   },
 ]
 
