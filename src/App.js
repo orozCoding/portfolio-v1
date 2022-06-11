@@ -1,11 +1,16 @@
 import React from 'react';
-import './App.css';
+import { useSelector } from 'react-redux/es/exports';
 import Header from './components/Header/Header';
+import { selectScrollStatus } from './redux/appSlice';
+import './App.css';
 
 function App() {
 
+  const scrollStatus = useSelector(selectScrollStatus)
+
   return (
-    <div className="app-ctn">
+    <div id='app-ctn' className={`app-ctn 
+    ${scrollStatus ? '' : 'no-scroll'}`}>
       <Header />
       <p >bellow header</p>
       <section id={'about'}

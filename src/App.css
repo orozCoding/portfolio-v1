@@ -10,18 +10,24 @@ html {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
-body {
+body,
+#root {
+  width: 100%;
+  position: absolute;
+  height: 100%;
   flex-grow: 1;
-  overflow-x: hidden; 
 }
 
 .app-ctn {
   position: relative;
   overflow-x: hidden;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
 
 a,
@@ -51,4 +57,22 @@ ul {
 
 .click {
   cursor: pointer;
+}
+
+/* scrollbar syles */
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: black;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: white;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 1px solid black;
+  border-radius: 10px;
 }
