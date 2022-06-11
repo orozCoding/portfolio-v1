@@ -16,18 +16,35 @@ const NavBar = () => {
       dispatch(turnScrollOn())
     }
   }
+
+  const unsetOverflowY = () => {
+    
+    
+    if(window.innerWidth > 600) {
+      setBurgerClicked(false)
+      if((document.body.style.overflowY = 'hidden')) {
+        document.body.style.overflowY = 'unset'
+      }
+    }
+  }
   
   useEffect(() => {
     toggleScroll();
     const appContainer = document.getElementById('app-ctn')
     if(burgerClicked) {
-      appContainer.style.overflowY = 'hidden'
       document.body.style.overflowY = 'hidden'
     } else {
-      appContainer.style.overflowY = 'unset'
       document.body.style.overflowY = 'unset'
     }
   }, [burgerClicked])
+
+  useEffect(() => {
+    window.addEventListener('resize', unsetOverflowY);
+
+    return (() => {
+      window.removeEventListener('resize', unsetOverflowY);
+    })
+  })
 
   const scrollTo = (refId) => {
     const ref = document.getElementById(`${refId}`)
