@@ -8,7 +8,7 @@ const NavBar = () => {
   const [burgerClicked, setBurgerClicked] = useState(false)
   const dispatch = useDispatch();
 
-  
+
   const toggleScroll = () => {
     if (burgerClicked) {
       dispatch(turnScrollOff())
@@ -18,20 +18,20 @@ const NavBar = () => {
   }
 
   const unsetOverflowY = () => {
-    
-    
-    if(window.innerWidth > 600) {
+
+
+    if (window.innerWidth > 600) {
       setBurgerClicked(false)
-      if((document.body.style.overflowY = 'hidden')) {
+      if ((document.body.style.overflowY = 'hidden')) {
         document.body.style.overflowY = 'unset'
       }
     }
   }
-  
+
   useEffect(() => {
     toggleScroll();
     const appContainer = document.getElementById('app-ctn')
-    if(burgerClicked) {
+    if (burgerClicked) {
       document.body.style.overflowY = 'hidden'
     } else {
       document.body.style.overflowY = 'unset'
@@ -75,7 +75,7 @@ const NavBar = () => {
       ${burgerClicked ? 'bi bi-x-lg' : 'bi bi-list'}`}
         onClick={() => {
           setBurgerClicked(!burgerClicked);
-          }}></i>
+        }}></i>
       <ul className={`nav-list d-flex
       ${burgerClicked ? 'active' : ''}`}>
         {renderItems()}

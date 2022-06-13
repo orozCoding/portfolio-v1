@@ -14,7 +14,7 @@ function App() {
       <Header />
       <p >bellow header</p>
       <section id={'about'}
-      style={{ 'minHeight': '100vh', 'margin-top': '80px' }}>About</section>
+      style={{ 'minHeight': '100vh', 'marginTop': '80px' }}>About</section>
       <section id={'works'}
       style={{ 'minHeight': '100vh' }}>Works</section>
       <section id={'contact'}
