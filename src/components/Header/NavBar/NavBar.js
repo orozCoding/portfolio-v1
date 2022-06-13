@@ -9,11 +9,10 @@ const NavBar = () => {
   const dispatch = useDispatch();
 
   const unsetOverflowY = () => {
-
     if (window.innerWidth > 600) {
-      setBurgerClicked(false)
+      setBurgerClicked(false);
       if ((document.body.style.overflowY = 'hidden')) {
-        document.body.style.overflowY = 'unset'
+        document.body.style.overflowY = 'unset';
       }
     }
   }
@@ -47,6 +46,15 @@ const NavBar = () => {
     ref.scrollIntoView()
   }
 
+  const hideHeader = () => {
+    const header = document.getElementById('header')
+    if (window.scrollY > 0) {
+      setTimeout(() => {
+        header.style.top = '-90px';
+      }, 700)
+    }
+  }
+
   const renderItems = () => {
     return items.map((i, index) => {
       return (
@@ -56,6 +64,7 @@ const NavBar = () => {
               setBurgerClicked(!burgerClicked);
             }
             scrollTo(i.refId)
+            hideHeader();
           }}>
           <p>
             {i.title}
