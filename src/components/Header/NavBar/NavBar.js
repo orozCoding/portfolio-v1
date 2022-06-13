@@ -9,13 +9,7 @@ const NavBar = () => {
   const dispatch = useDispatch();
 
 
-  const toggleScroll = () => {
-    if (burgerClicked) {
-      dispatch(turnScrollOff())
-    } else if (!burgerClicked) {
-      dispatch(turnScrollOn())
-    }
-  }
+
 
   const unsetOverflowY = () => {
 
@@ -29,14 +23,20 @@ const NavBar = () => {
   }
 
   useEffect(() => {
+    const toggleScroll = () => {
+      if (burgerClicked) {
+        dispatch(turnScrollOff())
+      } else if (!burgerClicked) {
+        dispatch(turnScrollOn())
+      }
+    }
     toggleScroll();
-    const appContainer = document.getElementById('app-ctn')
     if (burgerClicked) {
       document.body.style.overflowY = 'hidden'
     } else {
       document.body.style.overflowY = 'unset'
     }
-  }, [burgerClicked])
+  }, [burgerClicked, dispatch])
 
   useEffect(() => {
     window.addEventListener('resize', unsetOverflowY);
