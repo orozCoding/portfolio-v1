@@ -1,17 +1,17 @@
 const menuItems = [
   {
     title: 'ABOUT',
-    refId: 'about',
+    refId: 'section-about',
     cName: 'nav-item click'
   },
   {
     title: 'WORKS',
-    refId: 'works',
+    refId: 'section-works',
     cName: 'nav-item click'
   },
   {
     title: 'CONTACT',
-    refId: 'contact',
+    refId: 'section-contact',
     cName: 'nav-item click'
   },
 ]

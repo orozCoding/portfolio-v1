@@ -2,6 +2,9 @@ import React from 'react';
 import { useSelector } from 'react-redux/es/exports';
 import Header from './components/Header/Header';
 import { selectScrollStatus } from './redux/appSlice';
+import About from './sections/About';
+import Works from './sections/Works';
+import Contact from './sections/Contact';
 import './App.css';
 
 function App() {
@@ -12,13 +15,12 @@ function App() {
     <div id='app-ctn' className={`app-ctn 
     ${scrollStatus ? '' : 'no-scroll'}`}>
       <Header />
-      <p >bellow header</p>
-      <section id={'about'}
-      style={{ 'minHeight': '100vh', 'marginTop': '80px' }}>About</section>
-      <section id={'works'}
-      style={{ 'minHeight': '100vh' }}>Works</section>
-      <section id={'contact'}
-        style={{ 'minHeight': '100vh' }}>Contact</section>
+      <div className="header-placeholder"></div>
+      <div className="sections-ctn d-flex col">
+        <About />
+        <Works />
+        <Contact />
+      </div>
     </div>
   );
 }
