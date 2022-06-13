@@ -9,7 +9,7 @@ const Header = () => {
     let header = document.getElementById('header')
     let prevScrollPosition = window.scrollY;
     window.onscroll = () => {
-      if (window.scrollY > 80) {
+      if (window.scrollY > 120) {
         header.classList.add('moving')
         let currentScrollPosition = window.scrollY;
         if (prevScrollPosition > currentScrollPosition) {
@@ -20,7 +20,7 @@ const Header = () => {
         prevScrollPosition = currentScrollPosition;
       }
 
-      if (window.scrollY === 0) {
+      if (window.scrollY < 120) {
         header.classList.remove('moving')
       }
     }

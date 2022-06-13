@@ -72,11 +72,11 @@ const NavBar = () => {
 
   const hideHeader = () => {
     const header = document.getElementById('header')
-    if (window.scrollY > 0) {
-      setTimeout(() => {
+    setTimeout(() => {
+      if (window.scrollY > 80) {
         header.style.top = '-90px';
-      }, 700)
-    }
+      }
+    }, 700)
   }
 
   const renderItems = () => {

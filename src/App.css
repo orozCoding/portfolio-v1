@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --titles-font: 'Oswald', sans-serif;
+  --font-titles: 'Oswald', sans-serif;
   --regular-font: 'Poppins', sans-serif;
   --color-blue: #38B6FF;
   --color-blue-dark: #1a5a7e;

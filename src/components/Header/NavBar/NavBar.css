@@ -1,7 +1,7 @@
 .nav-list {
   gap: 20px;
   transition: all ease 0.5s;
-  font-family: var(--titles-font);
+  font-family: var(--font-titles);
   justify-content: center;
   align-items: center;
 }
