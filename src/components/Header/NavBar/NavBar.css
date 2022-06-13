@@ -40,6 +40,10 @@
   transform: scale(1.05);
 }
 
+.nav-list li p.active {
+  color: var(--color-blue-dark);
+}
+
 .nav-list li p:after {
   content: '';
   position: absolute;

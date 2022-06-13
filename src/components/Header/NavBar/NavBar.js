@@ -41,6 +41,30 @@ const NavBar = () => {
     })
   })
 
+  useEffect(() => {
+    const navBarButtons = document.querySelectorAll('.nav-list li p')
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY === 0) {
+        navBarButtons[0].classList.remove('active')
+        navBarButtons[1].classList.remove('active')
+        navBarButtons[2].classList.remove('active')
+      } else if (window.scrollY >= 105 && window.scrollY < 758) {
+        navBarButtons[0].classList.add('active')
+        navBarButtons[1].classList.remove('active')
+        navBarButtons[2].classList.remove('active')
+      } else if (window.scrollY >= 758 && window.scrollY < 1411) {
+        navBarButtons[1].classList.add('active')
+        navBarButtons[0].classList.remove('active')
+        navBarButtons[2].classList.remove('active')
+      } else if (window.scrollY >= 1411) {
+        navBarButtons[2].classList.add('active')
+        navBarButtons[0].classList.remove('active')
+        navBarButtons[1].classList.remove('active')
+      }
+    })
+  })
+
   const scrollTo = (refId) => {
     const ref = document.getElementById(`${refId}`)
     ref.scrollIntoView()
