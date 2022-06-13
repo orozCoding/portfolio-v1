@@ -30,10 +30,13 @@
 .nav-list li p {
   text-decoration: none;
   transition: all ease 0.5s;
-  /* display: inline-block; */
   position: relative;
   color: var(--color-blue);
   font-size: 30px;
+}
+
+.nav-list li p:hover {
+  color: var(--color-blue-dark);
 }
 
 .nav-list li p:after {
@@ -44,7 +47,7 @@
   height: 2px;
   bottom: 0px;
   left: 0;
-  background-color: #0087ca;
+  background-color: var(--color-blue-dark);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

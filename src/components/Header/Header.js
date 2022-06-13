@@ -28,7 +28,10 @@ const Header = () => {
 
   return (
     <header id="header" className="header d-flex">
-      <img className="logo-in-header" src="/logo.png" alt="orozcoding logo" />
+      <img className="logo-in-header click" src="/logo.png" alt="orozcoding logo"
+      onClick={() => {
+        window.scrollTo(0 ,0);
+      }}/>
       <NavBar />
     </header>
   )
