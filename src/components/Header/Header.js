@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <header id="header" className="header d-flex">
-      <p>Logo</p>
+      <img className="logo-in-header" src="/logo.png" alt="orozcoding logo" />
       <NavBar />
     </header>
   )

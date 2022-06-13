@@ -1,4 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --titles-font: 'Oswald', sans-serif;
+  --regular-font: 'Poppins', sans-serif;
+  --color-blue: #38B6FF;
+}
 
 * {
   margin: 0;
@@ -19,6 +26,7 @@ body,
   position: absolute;
   height: 100%;
   flex-grow: 1;
+  font-family: var(--regular-font);
 }
 
 .app-ctn {

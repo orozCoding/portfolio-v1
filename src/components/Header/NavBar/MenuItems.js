@@ -1,16 +1,16 @@
 const menuItems = [
   {
-    title: 'About',
+    title: 'ABOUT',
     refId: 'about',
     cName: 'nav-item click'
   },
   {
-    title: 'Works',
+    title: 'WORKS',
     refId: 'works',
     cName: 'nav-item click'
   },
   {
-    title: 'Contact',
+    title: 'CONTACT',
     refId: 'contact',
     cName: 'nav-item click'
   },

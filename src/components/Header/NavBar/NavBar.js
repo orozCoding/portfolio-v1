@@ -8,11 +8,7 @@ const NavBar = () => {
   const [burgerClicked, setBurgerClicked] = useState(false)
   const dispatch = useDispatch();
 
-
-
-
   const unsetOverflowY = () => {
-
 
     if (window.innerWidth > 600) {
       setBurgerClicked(false)

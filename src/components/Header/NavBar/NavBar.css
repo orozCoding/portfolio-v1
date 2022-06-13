@@ -1,6 +1,9 @@
 .nav-list {
   gap: 20px;
   transition: all ease 0.5s;
+  font-family: var(--titles-font);
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-burger {
@@ -25,12 +28,11 @@
 }
 
 .nav-list li p {
-  color: blue;
   text-decoration: none;
   transition: all ease 0.5s;
   /* display: inline-block; */
   position: relative;
-  color: #0087ca;
+  color: var(--color-blue);
   font-size: 30px;
 }
 
