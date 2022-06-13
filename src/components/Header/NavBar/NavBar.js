@@ -49,11 +49,11 @@ const NavBar = () => {
         navBarButtons[0].classList.remove('active')
         navBarButtons[1].classList.remove('active')
         navBarButtons[2].classList.remove('active')
-      } else if (window.scrollY >= 105 && window.scrollY < 380) {
+      } else if (window.scrollY >= 105 && window.scrollY < 250) {
         navBarButtons[0].classList.add('active')
         navBarButtons[1].classList.remove('active')
         navBarButtons[2].classList.remove('active')
-      } else if (window.scrollY >= 380 && window.scrollY < 1211) {
+      } else if (window.scrollY >= 250 && window.scrollY < 1211) {
         navBarButtons[1].classList.add('active')
         navBarButtons[0].classList.remove('active')
         navBarButtons[2].classList.remove('active')
