@@ -6,6 +6,7 @@
   --regular-font: 'Poppins', sans-serif;
   --color-blue: #38B6FF;
   --color-blue-dark: #1a5a7e;
+  --color-background: #f3f3f3;
 }
 
 * {
@@ -28,6 +29,7 @@ body,
   height: 100%;
   flex-grow: 1;
   font-family: var(--regular-font);
+  background-color: var(--color-background);
 }
 
 .app-ctn {
@@ -78,10 +80,10 @@ body::-webkit-scrollbar {
   width: 12px;
 }
 body::-webkit-scrollbar-track {
-  background: white;
+  background: var(--color-background)
 }
 body::-webkit-scrollbar-thumb {
-  background-color: var(--dark-slate);
+  background-color: var(--color-background);
   border: 1px solid black;
   border-radius: 10px;
 }

@@ -29,7 +29,7 @@
 
 .nav-list li p {
   text-decoration: none;
-  transition: all ease 0.5s;
+  transition: all ease 0.2s;
   position: relative;
   color: var(--color-blue);
   font-size: 30px;
@@ -37,6 +37,7 @@
 
 .nav-list li p:hover {
   color: var(--color-blue-dark);
+  transform: scale(1.05);
 }
 
 .nav-list li p:after {
