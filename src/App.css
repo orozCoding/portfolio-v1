@@ -70,7 +70,7 @@ ul {
   cursor: pointer;
 }
 
-/* scrollbar syles */
+/* scrollbar styles */
 
 html {
   scrollbar-width: thin;
@@ -95,4 +95,8 @@ section {
 .header-placeholder {
   height: 90px;
   background-color: var(--color-background);
+}
+
+.margin-for-menu {
+  margin-right: 12px;
 }

@@ -65,25 +65,32 @@
 @media only screen and (max-width: 600px) {
   .nav-burger {
     display: block;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 3;
   }
   
   .nav-list {
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     background-color: white;
-    top: 80px;
+    top: 0;
     right: -100vw;
     gap: 20px;
     transition: all ease 0.3s;
     background-color: rgb(187, 187, 187);
     width: 70%;
+    height: 100vh;
     z-index: 2;
   }
 
   .nav-list.active {
-    width: 70%;
+    width: 50%;
     right: 0;
     transition: all ease-out 0.3s;
+    background-color: white;
+    box-shadow: -7px 0px 2px -3px rgba(0, 0, 0, 0.27);
   }
 
   .nav-list p {
