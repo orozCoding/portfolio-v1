@@ -101,7 +101,8 @@ const NavBar = () => {
   return (
     <div className='nav-ctn d-flex'>
       <i className={`nav-burger click
-      ${burgerClicked ? 'bi bi-x-lg' : 'bi bi-list'}`}
+      bi bi-list
+      ${burgerClicked ? 'clicked' : 'idle'}`}
         onClick={() => {
           setBurgerClicked(!burgerClicked);
         }}></i>
@@ -109,6 +110,8 @@ const NavBar = () => {
       ${burgerClicked ? 'active' : ''}`}>
         {renderItems()}
       </ul>
+      <i className={`nav-ex click bi bi-x-lg ${burgerClicked ? 'active' : 'idle'}`}
+        onClick={() => setBurgerClicked(!burgerClicked)}></i>
       <div className={`overlay
       ${burgerClicked ? 'active' : ''}`}
         onClick={() => setBurgerClicked(!burgerClicked)}>
