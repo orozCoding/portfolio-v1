@@ -43,12 +43,15 @@ const NavBar = () => {
 
   useEffect(() => {
     const navBarButtons = document.querySelectorAll('.nav-list li p')
-    const maxScroll = document.body.scrollHeight;
+    let maxScroll = document.body.scrollHeight;
     const scrollQuarter = maxScroll / 4;
 
     const worksRef = scrollQuarter - (scrollQuarter/1.4);
     const contactRef = scrollQuarter * 1.8;
 
+    window.addEventListener('resize', () => {
+      maxScroll = document.body.scrollHeight;
+    })
 
     window.addEventListener('scroll', () => {
       if (window.scrollY >= 0 && window.scrollY < worksRef) {
