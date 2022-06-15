@@ -3,18 +3,110 @@
   align-items: center;
   padding: 20px 5px;
   background-color: white;
-    /* box shadow */
-    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  height: 100%;
+  /* box shadow */
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .section-works-ctn-left {
   align-items: center;
+  justify-content: center;
   gap: 20px;
   width: 50%;
+  min-height: 80vh;
+  flex-grow: 1;
 }
 
 .section-works-ctn-right {
+  align-items: center;
+  justify-content: center;
   width: 50%;
+  flex-grow: 1;
+}
+
+/* .technologies-wrapper {
+  font-size: 60px;
+  color: black;
+  background-color: black;
+} */
+
+.technologies-wrapper,
+.tools-wrapper {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+
+.technologies-wrapper img,
+.tools-wrapper img {
+  width: 50px;
+}
+
+/* icons */
+
+.section-works img[alt=html5] {
+  filter: invert(32%) sepia(23%) saturate(4484%) hue-rotate(348deg) brightness(108%) contrast(88%);
+}
+
+.section-works img[alt=css3] {
+  filter: invert(33%) sepia(90%) saturate(1090%) hue-rotate(180deg) brightness(86%) contrast(87%);
+}
+
+.section-works img[alt=javascript] {
+  filter: invert(90%) sepia(49%) saturate(1261%) hue-rotate(338deg) brightness(101%) contrast(94%);
+}
+
+.section-works img[alt=react] {
+  filter: invert(69%) sepia(60%) saturate(415%) hue-rotate(156deg) brightness(101%) contrast(97%);
+}
+
+.section-works img[alt=redux] {
+  filter: invert(34%) sepia(17%) saturate(3891%) hue-rotate(233deg) brightness(94%) contrast(91%);
+}
+
+.section-works img[alt=ruby] {
+  filter: invert(29%) sepia(47%) saturate(2035%) hue-rotate(332deg) brightness(97%) contrast(105%);
+}
+
+.section-works img[alt=rubyonrails] {
+  filter: invert(11%) sepia(67%) saturate(7238%) hue-rotate(359deg) brightness(89%) contrast(113%);
+}
+
+.section-works img[alt=postgresql] {
+  filter: invert(30%) sepia(93%) saturate(1610%) hue-rotate(215deg) brightness(95%) contrast(86%);
+}
+
+.section-works img[alt=git] {
+  filter: invert(37%) sepia(96%) saturate(1950%) hue-rotate(342deg) brightness(97%) contrast(94%);
+}
+
+.section-works img[alt=github] {
+  filter: invert(4%) sepia(14%) saturate(191%) hue-rotate(314deg) brightness(100%) contrast(89%);
+}
+
+.section-works img[alt=postman] {
+  filter: invert(54%) sepia(10%) saturate(5850%) hue-rotate(335deg) brightness(100%) contrast(103%);
+}
+
+.section-works img[alt=bootstrap] {
+  filter: invert(39%) sepia(25%) saturate(1788%) hue-rotate(226deg) brightness(84%) contrast(82%);
+}
+
+.section-works img[alt=googlefonts] {
+  filter: invert(74%) sepia(64%) saturate(7225%) hue-rotate(201deg) brightness(99%) contrast(93%);
+}
+
+.section-works img[alt=heroku] {
+  filter: invert(10%) sepia(100%) saturate(7348%) hue-rotate(272deg) brightness(59%) contrast(113%);
+}
+
+.section-works img[alt=netlify] {
+  filter: invert(58%) sepia(91%) saturate(1972%) hue-rotate(133deg) brightness(96%) contrast(101%);
+}
+
+.section-works img[alt=visualstudiocode] {
+  filter: invert(35%) sepia(53%) saturate(2057%) hue-rotate(181deg) brightness(89%) contrast(102%);
 }
