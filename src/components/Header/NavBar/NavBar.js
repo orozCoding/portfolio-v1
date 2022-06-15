@@ -54,6 +54,7 @@ const NavBar = () => {
     })
 
     window.addEventListener('scroll', () => {
+        maxScroll = document.body.scrollHeight;
       if (window.scrollY >= 0 && window.scrollY < worksRef) {
         navBarButtons[0].classList.add('active');
         navBarButtons[1].classList.remove('active');

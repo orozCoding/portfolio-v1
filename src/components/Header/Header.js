@@ -8,7 +8,8 @@ const Header = () => {
   useEffect(() => {
     let header = document.getElementById('header')
     let prevScrollPosition = window.scrollY;
-    window.onscroll = () => {
+
+    window.addEventListener('scroll', () => {
       if (window.scrollY > 120) {
         header.classList.add('moving')
         let currentScrollPosition = window.scrollY;
@@ -23,7 +24,7 @@ const Header = () => {
       if (window.scrollY < 120) {
         header.classList.remove('moving')
       }
-    }
+    })
   }, [])
 
   return (

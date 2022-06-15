@@ -54,7 +54,7 @@
   }
 }
 
-@media only screen and (max-width: 900px) { 
+@media only screen and (max-width: 915px) { 
   .section-about-ctn {
     flex-direction: column;
     gap: 10px;
@@ -84,6 +84,20 @@
   .hello-ctn {
     flex-direction: row;
   }
+  @media only screen and (min-height: 1100px) {
+    .section-about-ctn img {
+      max-width: 500px;
+    }
+
+    .section-about-ctn h2 {
+      font-size: 50px;
+    }
+
+    .section-about-ctn {
+      font-size: 25px;
+      gap: 30px;
+    }
+  }
 }
 
 @media only screen and (max-width: 800px) { 
@@ -97,6 +111,21 @@
 
   .section-about-ctn {
     font-size: 16px
+  }
+
+  @media only screen and (min-height: 900px) {
+    .section-about-ctn img {
+      max-width: 450px;
+    }
+
+    .section-about-ctn h2 {
+      font-size: 50px;
+    }
+
+    .section-about-ctn {
+      font-size: 25px;
+      gap: 30px;
+    }
   }
 }
 
@@ -125,5 +154,16 @@
 
   .section-about-ctn {
     font-size: 15px
+  }
+
+  @media only screen and (min-height: 800px) {
+    .section-about-ctn {
+      gap: 20px;
+      font-size: 20px;
+    }
+
+    .section-about-ctn h2 {
+      font-size: 30px;
+    }
   }
 }
