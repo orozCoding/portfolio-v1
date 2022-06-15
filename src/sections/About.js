@@ -11,8 +11,10 @@ const About = () => {
           </div>
         </div>
         <div className="sec-about-right-ctn d-flex col">
-          <h2 className="about-hola"> ¡Hola!</h2>
-          <h2> I'm Angel Orozco </h2>
+          <div className="hello-ctn d-flex col">
+            <h2 className="about-hola">¡Hola!</h2>
+            <h2> I'm Angel Orozco </h2>
+          </div>
           <p>Formerly a Medical Doctor,
             and now a passionate Full-stack developer.
             I love building useful digital products and experiences,
