@@ -46,3 +46,9 @@
     transition: all ease 0.2s;
   }
 }
+
+@media only screen and (max-width: 310px) {
+  .header img {
+    width: 180px;
+  }
+}
