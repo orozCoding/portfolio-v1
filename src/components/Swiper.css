@@ -1,0 +1,21 @@
+.swiper {
+  width: 80%;
+  height: 70vh;
+}
+
+.swiper-slide {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background-color: var(--color-background);
+}
+
+.slice-ctn {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: black;
+}

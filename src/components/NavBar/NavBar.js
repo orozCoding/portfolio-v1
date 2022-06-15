@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { useDispatch } from "react-redux"
 import items from "./MenuItems"
 import './NavBar.css'
-import { turnScrollOff, turnScrollOn } from "../../../redux/appSlice"
+import { turnScrollOff, turnScrollOn } from "../../redux/appSlice"
 
 const NavBar = () => {
   const [burgerClicked, setBurgerClicked] = useState(false)

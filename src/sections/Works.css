@@ -1,7 +1,20 @@
 .section-works {
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px;
   background-color: white;
     /* box shadow */
     -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.section-works-ctn-left {
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+}
+
+.section-works-ctn-right {
+  width: 50%;
 }
