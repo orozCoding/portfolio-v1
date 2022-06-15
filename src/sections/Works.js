@@ -4,12 +4,12 @@ import WorksSlices from "../components/Swiper";
 
 const Works = () => {
   return (
-    <section id="section-works" className="section-works d-flex">
-      <div className="section-works-ctn-left d-flex col">
+    <section  id="section-works" className="section-works d-flex">
+      <div className="section-works-ctn-left d-flex col" data-aos="fade-right">
         <h2>SOME OF MY PROJECTS</h2>
         <WorksSlices />
       </div>
-      <div className="section-works-ctn-right d-flex col">
+      <div className="section-works-ctn-right d-flex col" data-aos="fade-left">
         <h2>MY STACK</h2>
         <div className="technologies-ctn d-flex col">
           <h3>Technologies</h3>

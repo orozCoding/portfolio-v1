@@ -21,6 +21,7 @@ const WorksSlices = () => {
       navigation
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
+      data-aos='flip-left'
     >
       <SwiperSlide>
         <div className="slice-ctn d-flex col">

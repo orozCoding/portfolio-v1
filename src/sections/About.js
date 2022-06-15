@@ -4,7 +4,7 @@ import './About.css'
 const About = () => {
   return (
     <section id="section-about" className="section-about d-flex">
-      <div className="section-about-ctn d-flex">
+      <div className="section-about-ctn d-flex" data-aos="fade-up">
         <div className="sec-about-left-ctn d-flex col">
           <div className="about-img-ctn d-flex">
             <img src="./picture.png" alt="profile" />
