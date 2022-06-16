@@ -93,7 +93,8 @@
   filter: invert(29%) sepia(47%) saturate(2035%) hue-rotate(332deg) brightness(97%) contrast(105%);
 }
 
-.section-works img[alt=rubyonrails] {
+.section-works img[alt=rubyonrails],
+.section-works img[alt=rails] {
   filter: invert(11%) sepia(67%) saturate(7238%) hue-rotate(359deg) brightness(89%) contrast(113%);
 }
 

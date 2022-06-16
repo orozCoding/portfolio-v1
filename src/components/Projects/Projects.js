@@ -27,7 +27,14 @@ const WorksSlices = () => {
           <div className="slice-footer d-flex">
             <div className="slice-footer-left d-flex col">
               <p>Built with:</p>
-              <ul className="d-flex">{item.stack.map((tech) => (<li>- {tech}</li>))}</ul>
+              {console.log(item.stack)}
+              <ul className="d-flex slice-stack">{item.stack.map((tech) => (
+                <li className="slice-stack-li d-flex">
+                  <img src={tech.i} alt={tech.t.toLowerCase()} />
+                  <p>{tech.t}</p>
+                </li>
+                ))}
+              </ul>
             </div>
             <div className="slice-footer-right d-flex col">
               {item.visit &&
@@ -39,13 +46,13 @@ const WorksSlices = () => {
               }
               {item.demo &&
                 <a href={item.demo} target='_blank' rel='noreferrer'
-                className="slice-button click d-flex">
+                  className="slice-button click d-flex">
                   <i class="bi bi-tools"></i>
                   <p>Demo</p>
                 </a>}
               {item.repo &&
                 <a href={item.repo} target='_blank' rel='noreferrer'
-                className="slice-button click d-flex">
+                  className="slice-button click d-flex">
                   <i class="bi bi-github"></i>
                   <p>Repository</p>
                 </a>}
