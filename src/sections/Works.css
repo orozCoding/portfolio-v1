@@ -10,6 +10,7 @@
 
 .section-works h2 {
   font-size: 40px;
+  text-align: center;
 }
 
 .section-works h3 {
@@ -29,6 +30,7 @@
   align-items: center;
   justify-content: center;
   width: 50%;
+  height: 100%;
   flex-grow: 1;
   gap: 30px;
 }
@@ -41,7 +43,7 @@
   padding: 15px 15px;
   /* border: var(--color-blue) solid 2px; */
   border-radius: 10px;
-  width: 80%;
+  width: 90%;
   background-color: var(--color-background);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -132,4 +134,99 @@
 
 .section-works img[alt=visualstudiocode] {
   filter: invert(35%) sepia(53%) saturate(2057%) hue-rotate(181deg) brightness(89%) contrast(102%);
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1200px) {
+
+  .technologies-wrapper,
+  .tools-wrapper {
+    font-size: 15px;
+    gap: 5px 5px;
+  }
+
+  .technologies-wrapper img,
+  .tools-wrapper img {
+    width: 40px;
+  }
+
+  .icon-box {
+    width: 70px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .section-works h2 {
+    font-size: 35px;
+  }
+
+  .section-works h3 {
+    font-size: 22px;
+  }
+
+  .technologies-wrapper,
+  .tools-wrapper {
+    font-size: 13px;
+  }
+
+}
+
+@media only screen and (max-width: 820px) { 
+ 
+  .section-works {
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 20px;
+  }
+
+  .section-works-ctn-left,
+  .section-works-ctn-right {
+    width: 90%;
+    min-height: 40vh;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) { 
+
+
+  @media only screen and (min-height: 900px) {
+ 
+  }
+}
+
+@media only screen and (max-width: 540px) { 
+ .section-works {
+  min-height: 150vh;
+ }
+}
+
+@media only screen and (min-height: 1024px) {
+  .section-works {
+    min-height: 1vh;
+    height: 1024px;
+  }
+}
+
+@media screen and (min-width: 1600px)
+and (min-height: 1026px ) {
+  .section-works {
+      min-height: 1vh;
+      height: 1025px;
+      max-height: 1025px;
+    }
+}
+
+@media screen and (max-height: 420px)
+and (max-width: 820px) {
+  .section-works {
+    min-height: 200vh;
+  }
+  
+  .section-works-ctn-left {
+    height: 50%;
+  }
 }

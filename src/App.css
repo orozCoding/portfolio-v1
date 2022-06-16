@@ -89,10 +89,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-section { 
-  min-height: 100vh;
-}
-
 .header-placeholder {
   height: 90px;
   background-color: var(--color-background);
@@ -100,4 +96,14 @@ section {
 
 .margin-for-menu {
   margin-right: 12px;
+}
+
+section {
+  min-height: 100vh;
+}
+
+@media screen and (max-height: 420px) {
+  section {
+    min-height: 150vh;
+  }
 }

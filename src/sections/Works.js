@@ -6,13 +6,14 @@ const Works = () => {
   return (
     <section  id="section-works" className="section-works d-flex">
       <div className="section-works-ctn-left d-flex col" data-aos="fade-right">
-        <h2>SOME OF MY PROJECTS</h2>
+        <h2>RECENT PROJECTS</h2>
         <Projects />
       </div>
       <div className="section-works-ctn-right d-flex col">
         <h2 data-aos="fade-left">MY STACK</h2>
         <div className="technologies-ctn d-flex col"
-        data-aos="fade-left">
+        data-aos="fade-left"
+        data-aos-delay="80">
           <h3>Technologies</h3>
           <div className="technologies-wrapper d-flex">
             <div className="icon-box d-flex col">
@@ -51,7 +52,7 @@ const Works = () => {
         </div>
         <div className="tools-ctn d-flex col"
         data-aos="fade-left"
-        data-aos-delay="100">
+        data-aos-delay="120">
           <h3>Tools</h3>
           <div className="tools-wrapper d-flex">
             <div className="icon-box d-flex col">

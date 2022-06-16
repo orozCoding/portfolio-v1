@@ -17,13 +17,13 @@ const WorksSlices = () => {
 
   const renderSlice = (item) => {
     return (<SwiperSlide>
-      <div className="slice-ctn d-flex col">
+      <div className="col slice-ctn d-flex">
         <div className="slice-img-ctn">
           <img src={item.img} alt={item.title} />
         </div>
         <div className="slice-info-ctn d-flex col">
           <h4 className="slice-title">{item.title}</h4>
-          <p>{item.description}</p>
+          <p className="slice-description">{item.description}</p>
           <div className="slice-footer d-flex">
             <div className="slice-footer-left d-flex col">
               <p>Built with:</p>
