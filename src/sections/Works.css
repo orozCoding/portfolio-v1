@@ -230,3 +230,12 @@ and (max-width: 820px) {
     height: 50%;
   }
 }
+
+
+@media screen and (max-width: 500px)
+and (max-height: 500px) {
+
+  .section-works {
+    min-height: 250vh;
+  }
+}
