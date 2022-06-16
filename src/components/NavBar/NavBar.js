@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react"
 import { useDispatch } from "react-redux"
 import items from "./MenuItems"
 import './NavBar.css'
-import { turnScrollOff, turnScrollOn } from "../../redux/appSlice"
+import { turnScrollOff, turnScrollOn } from "../../redux/appSlice";
+import hideHeader from "../helpers";
 
 const NavBar = () => {
   const [burgerClicked, setBurgerClicked] = useState(false)
@@ -74,15 +75,6 @@ const NavBar = () => {
   const scrollTo = (refId) => {
     const ref = document.getElementById(`${refId}`)
     ref.scrollIntoView()
-  }
-
-  const hideHeader = () => {
-    const header = document.getElementById('header')
-    setTimeout(() => {
-      if (window.scrollY > 80) {
-        header.style.top = '-90px';
-      }
-    }, 700)
   }
 
   const renderItems = () => {
