@@ -1,13 +1,13 @@
 import React from "react";
 import './Works.css'
-import WorksSlices from "../components/Swiper";
+import Projects from "../components/Projects/Projects";
 
 const Works = () => {
   return (
     <section  id="section-works" className="section-works d-flex">
       <div className="section-works-ctn-left d-flex col" data-aos="fade-right">
         <h2>SOME OF MY PROJECTS</h2>
-        <WorksSlices />
+        <Projects />
       </div>
       <div className="section-works-ctn-right d-flex col">
         <h2 data-aos="fade-left">MY STACK</h2>

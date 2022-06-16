@@ -42,6 +42,7 @@ body,
   overflow-y: hidden;
 }
 
+button,
 a,
 a:hover {
   all: unset;

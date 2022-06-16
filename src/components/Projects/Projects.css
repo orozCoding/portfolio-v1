@@ -1,0 +1,76 @@
+.swiper {
+  width: 80%;
+  height: 75vh;
+}
+
+.swiper-slide {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background-color: var(--color-background);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.slice-ctn {
+  justify-content: baseline;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.slice-info-ctn {
+  width: 80%;
+}
+
+.slice-ctn h4 {
+  font-size: 35px;
+}
+
+.slice-img-ctn {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+}
+
+.slice-ctn img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.slice-ctn ul {
+  gap: 10px;
+}
+
+.slice-footer {
+  width: 100%;
+}
+
+.slice-footer-left {
+  width: 60%;
+}
+
+.slice-footer-right {
+  width: 30%;
+}
+
+.slice-footer-left {
+  justify-content: flex-start;
+}
+
+.slice-footer-right {
+  justify-content: flex-end;
+}
+
+.slice-ctn button {
+  text-align: center;
+  width: 90%;
+  border: 1px solid grey;
+  background-color: white;
+  padding: 5px 10px;
+}
