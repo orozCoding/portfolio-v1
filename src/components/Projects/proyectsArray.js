@@ -1,30 +1,39 @@
 const projectsArray = [
   {
     title: 'Seis Palabras',
-    description: 'Web app where Spanish students can practice translating six words every day.',
+    description: 'Web app where Spanish students can practice translating six words every day. The student is able to create an account and keep track of its progress.',
     stack: ['React', 'Redux'],
     img: './img/seispalabras.png',
-    live: 'https://seispalabras.netlify.app/',
+    visit: 'https://seispalabras.netlify.app/',
     demo: null,
     repo: 'https://github.com/orozCoding/seispalabras'
   },
   {
     title: 'Budget App',
-    description: 'Mobile web app to track how much money you spend.',
+    description: 'Mobile web app to track how much money the user spend. User may create, update and remove many categories and transactions related to those categories.',
     stack: ['Ruby', 'Rails'],
     img: './img/budgetapp.png',
-    live: null,
+    visit: null,
     demo: 'https://miplatica.herokuapp.com/',
     repo: 'https://github.com/orozCoding/seispalabras'
   },
   {
     title: 'Billionaires',
-    description: 'Collaborative project to get my Full-stack Software Developer certificate. Web-app to book appointments with billionaires!',
+    description: 'Collaborative capstone project prior my Full-stack Software Developer certificate. It is a web-app to book appointments with billionaires!',
     stack: ['React', 'Redux', 'Ruby', 'Rails'],
     img: './img/billionaires.png',
-    live: null,
-    demo: 'https://miplatica.herokuapp.com/',
+    visit: null,
+    demo: 'https://billionaire-appointment.netlify.app/',
     repo: 'https://github.com/rachidelaid/billionaire-appointment-front-end'
+  },
+  {
+    title: 'Tokens To Claim',
+    description: 'Web-app for NFT-games players and crypto holders to track their locked profits in games and platforms.',
+    stack: ['HTML5', 'CSS3', 'JavaScript'],
+    img: './img/tokenstoclaim.png',
+    visit: 'https://orozcoding.github.io/tokenstoclaim/',
+    demo: null,
+    repo: 'https://github.com/orozCoding/tokenstoclaim'
   }
 ];
 

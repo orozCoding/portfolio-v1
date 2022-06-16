@@ -43,8 +43,7 @@ body,
 }
 
 button,
-a,
-a:hover {
+a {
   all: unset;
 }
 

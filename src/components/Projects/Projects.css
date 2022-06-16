@@ -11,6 +11,7 @@
   border-radius: 18px;
   background-color: var(--color-background);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: grab;
 }
 
 .slice-ctn {
@@ -22,7 +23,14 @@
 }
 
 .slice-info-ctn {
-  width: 80%;
+  width: 85%;
+  height: 50%;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.slice-title {
+  text-align: center;
 }
 
 .slice-ctn h4 {
@@ -41,6 +49,7 @@
  width: 100%;
  height: 100%;
  object-fit: cover;
+ cursor: grab;
 }
 
 .slice-ctn ul {
@@ -56,21 +65,40 @@
 }
 
 .slice-footer-right {
-  width: 30%;
+  width: 40%;
+}
+
+.slice-footer-right a {
+  width: 90%;
 }
 
 .slice-footer-left {
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .slice-footer-right {
   justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
 }
 
-.slice-ctn button {
+.slice-button {
   text-align: center;
-  width: 90%;
+  width: 100%;
   border: 1px solid grey;
   background-color: white;
   padding: 5px 10px;
+  border-radius: 10px;
+  transition: all linear 0.1s;
+}
+
+.slice-button p {
+  width: 100%;
+  justify-self: center;
+}
+
+.slice-button:hover {
+  background-color: var(--color-blue-dark);
+  color: white;
+  transition: all linear 0.1s;
 }
