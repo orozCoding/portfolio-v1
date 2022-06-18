@@ -1,0 +1,41 @@
+.social-list {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-link {
+  transition: all ease 0.4s;
+}
+
+.social-link:hover {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+  transition: all ease 0.2s;
+}
+
+.social-icon {
+  width: 40px;
+}
+
+.resume-btn {
+  text-align: center;
+  width: 100%;
+  border: 1px solid grey;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all linear 0.1s;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume-btn:hover {
+  background-color: var(--color-blue-dark);
+  color: white;
+  transition: all linear 0.1s;
+}
+
+.resume-btn img {
+  width: 40px;
+}

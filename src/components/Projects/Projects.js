@@ -27,7 +27,6 @@ const WorksSlices = () => {
           <div className="slice-footer d-flex">
             <div className="slice-footer-left d-flex col">
               <p>Built with:</p>
-              {console.log(item.stack)}
               <ul className="d-flex slice-stack">{item.stack.map((tech) => (
                 <li className="slice-stack-li d-flex">
                   <img src={tech.i} alt={tech.t.toLowerCase()} />
@@ -40,20 +39,20 @@ const WorksSlices = () => {
               {item.visit &&
                 <a href={item.visit} target='_blank' rel='noreferrer'
                   className="slice-button click d-flex">
-                  <i class="bi bi-globe"></i>
+                  <i className="bi bi-globe"></i>
                   <p>Visit</p>
                 </a>
               }
               {item.demo &&
                 <a href={item.demo} target='_blank' rel='noreferrer'
                   className="slice-button click d-flex">
-                  <i class="bi bi-tools"></i>
+                  <i className="bi bi-tools"></i>
                   <p>Demo</p>
                 </a>}
               {item.repo &&
                 <a href={item.repo} target='_blank' rel='noreferrer'
                   className="slice-button click d-flex">
-                  <i class="bi bi-github"></i>
+                  <i className="bi bi-github"></i>
                   <p>Repository</p>
                 </a>}
             </div>

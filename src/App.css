@@ -107,3 +107,86 @@ section {
     min-height: 150vh;
   }
 }
+
+/* Icons colors */ 
+
+img[alt=html5] {
+  filter: invert(32%) sepia(23%) saturate(4484%) hue-rotate(348deg) brightness(108%) contrast(88%);
+}
+
+img[alt=css3] {
+  filter: invert(33%) sepia(90%) saturate(1090%) hue-rotate(180deg) brightness(86%) contrast(87%);
+}
+
+img[alt=javascript] {
+  filter: invert(90%) sepia(49%) saturate(1261%) hue-rotate(338deg) brightness(101%) contrast(94%);
+}
+
+img[alt=react] {
+  filter: invert(69%) sepia(60%) saturate(415%) hue-rotate(156deg) brightness(101%) contrast(97%);
+}
+
+img[alt=redux] {
+  filter: invert(34%) sepia(17%) saturate(3891%) hue-rotate(233deg) brightness(94%) contrast(91%);
+}
+
+img[alt=ruby] {
+  filter: invert(29%) sepia(47%) saturate(2035%) hue-rotate(332deg) brightness(97%) contrast(105%);
+}
+
+img[alt=rubyonrails],
+img[alt=rails] {
+  filter: invert(11%) sepia(67%) saturate(7238%) hue-rotate(359deg) brightness(89%) contrast(113%);
+}
+
+img[alt=postgresql] {
+  filter: invert(30%) sepia(93%) saturate(1610%) hue-rotate(215deg) brightness(95%) contrast(86%);
+}
+
+img[alt=git] {
+  filter: invert(37%) sepia(96%) saturate(1950%) hue-rotate(342deg) brightness(97%) contrast(94%);
+}
+
+img[alt=github] {
+  filter: invert(4%) sepia(14%) saturate(191%) hue-rotate(314deg) brightness(100%) contrast(89%);
+}
+
+img[alt=postman] {
+  filter: invert(54%) sepia(10%) saturate(5850%) hue-rotate(335deg) brightness(100%) contrast(103%);
+}
+
+img[alt=bootstrap] {
+  filter: invert(39%) sepia(25%) saturate(1788%) hue-rotate(226deg) brightness(84%) contrast(82%);
+}
+
+img[alt=googlefonts] {
+  filter: invert(74%) sepia(64%) saturate(7225%) hue-rotate(201deg) brightness(99%) contrast(93%);
+}
+
+img[alt=heroku] {
+  filter: invert(10%) sepia(100%) saturate(7348%) hue-rotate(272deg) brightness(59%) contrast(113%);
+}
+
+img[alt=netlify] {
+  filter: invert(58%) sepia(91%) saturate(1972%) hue-rotate(133deg) brightness(96%) contrast(101%);
+}
+
+img[alt=visualstudiocode] {
+  filter: invert(35%) sepia(53%) saturate(2057%) hue-rotate(181deg) brightness(89%) contrast(102%);
+}
+
+img[alt=twitter] {
+  filter: invert(66%) sepia(73%) saturate(5033%) hue-rotate(178deg) brightness(102%) contrast(90%);
+}
+
+img[alt=linkedin] {
+  filter: invert(16%) sepia(49%) saturate(7075%) hue-rotate(200deg) brightness(105%) contrast(92%);
+}
+
+img[alt=whatsapp] {
+  filter: invert(61%) sepia(56%) saturate(588%) hue-rotate(90deg) brightness(96%) contrast(94%);
+}
+
+img[alt=gmail] {
+  filter: invert(35%) sepia(96%) saturate(4112%) hue-rotate(347deg) brightness(101%) contrast(84%);
+}

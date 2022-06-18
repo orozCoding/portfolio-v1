@@ -1,0 +1,13 @@
+.contact-info-box {
+  gap: 20px;
+}
+
+.contact-info-link {
+  color: var(--color-blue-dark);
+  transition: all ease 0.3s;
+}
+
+.contact-info-link:hover {
+  color: var(--color-blue);
+  transition: all ease 0.3s;
+}
