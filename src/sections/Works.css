@@ -84,6 +84,7 @@
 
   .section-works-ctn-left {
     width: 100%;
+    max-width: 500px;
   }
 
   .section-works-ctn-right {

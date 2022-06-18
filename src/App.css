@@ -102,9 +102,9 @@ section {
   min-height: 100vh;
 }
 
-@media screen and (max-height: 420px) {
+@media screen and (orientation: portrait) {
   section {
-    min-height: 150vh;
+    min-height: 0vh;
   }
 }
 
