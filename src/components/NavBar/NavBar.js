@@ -97,7 +97,7 @@ const NavBar = () => {
   }
 
   return (
-    <div className='nav-ctn d-flex'>
+    <div className='nav-ctn d-flex' >
       <i className={`nav-burger click
       bi bi-list
       ${burgerClicked ? 'clicked' : 'idle'}`}

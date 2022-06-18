@@ -71,7 +71,8 @@ const Form = () => {
   return (
     <form className="form d-flex col" 
     method="post"
-    onSubmit={handleSubmit} noValidate >
+    onSubmit={handleSubmit} noValidate
+    data-aos='flip-right' >
       <input type="hidden" name="form-name" value="contact" />
       {formSent && <p className="msg-sent">Message sent! I'll get back to you shortly.</p> }
       <label className="form-label d-flex col">

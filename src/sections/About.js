@@ -4,13 +4,13 @@ import './About.css'
 const About = () => {
   return (
     <section id="section-about" className="section-about d-flex">
-      <div className="section-about-ctn d-flex" data-aos="fade-up">
+      <div className="section-about-ctn d-flex">
         <div className="sec-about-left-ctn d-flex col">
-          <div className="about-img-ctn d-flex">
+          <div className="about-img-ctn d-flex" data-aos="fade-right" data-aos-delay="500" >
             <img src="./picture.png" alt="profile" />
           </div>
         </div>
-        <div className="sec-about-right-ctn d-flex col">
+        <div className="sec-about-right-ctn d-flex col" data-aos="fade-left">
           <div className="hello-ctn d-flex col">
             <h2 className="about-hola">¡Hola!</h2>
             <h2> I'm Angel Orozco </h2>

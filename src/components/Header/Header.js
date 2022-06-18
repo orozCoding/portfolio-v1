@@ -33,7 +33,8 @@ const Header = () => {
       <img className="logo-in-header click" src="/logo.png" alt="orozcoding logo"
       onClick={() => {
         window.scrollTo(0 ,0);
-      }}/>
+      }}
+      data-aos="flip-left" data-aos-delay="1000"/>
       <NavBar />
     </header>
   )

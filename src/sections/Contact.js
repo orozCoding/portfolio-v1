@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section id="section-contact" className="section-contact d-flex">
       <div className="section-contact-wrapper d-flex">
-        <div className="section-contact-left d-flex col">
+        <div className="section-contact-left d-flex col" data-aos='fade-left'>
           <h2>Let's connect</h2>
           <div className="contact-socials d-flex col">
             <h3>Social Links</h3>
@@ -24,12 +24,12 @@ const Contact = () => {
               <p>Download Resume</p>
             </a>
           </div>
-          <div className="contact-info d-flex col">
+          <div className="contact-info d-flex col" >
             <h3>Contact Info</h3>
             <ContactInfo />
           </div>
         </div>
-        <div className="section-contact-right d-flex col">
+        <div className="section-contact-right d-flex col" data-aos='fade-right'>
           <h2>Get in touch!</h2>
           <Form />
         </div>
