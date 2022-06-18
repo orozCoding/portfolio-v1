@@ -54,31 +54,26 @@ const Form = () => {
       .join("&");
   }
   
-  const postForm = (form) => {
-    const values = {
-      name: form.name.value,
-      email: form.name.value,
-      message: form.message.value
-    }
+  const postForm = (form, submission) => {
     
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
-        ...values,
+        ...submission,
       }),
     })
       .then((resp) => console.log(resp))
       .catch((error) => alert(error));
   };
 
-  const sendForm = (form) => {
+  const sendForm = (form, submission) => {
     const errors = validateForm(form);
     if (errors.name === null && errors.email === null && errors.message === null) {
       setFormSent(true);
       clearInputs(form);
-      postForm(form);
+      postForm(form, submission);
       return true;
     }
     setFormSent(false);
@@ -90,9 +85,15 @@ const Form = () => {
     
     const form = e.target
 
+    const submission = {
+      name: form.name.value,
+      email: form.name.value,
+      message: form.message.value
+    }
+
     setErrors(validateForm(form));
 
-    return sendForm(form);
+    return sendForm(form,submission);
   }
 
   return (
