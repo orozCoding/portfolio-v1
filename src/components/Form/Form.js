@@ -45,18 +45,29 @@ const Form = () => {
     })
   }
 
+  const postForm = () => {
+    let myForm = document.getElementById("form");
+  let formData = new FormData(myForm);
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error));
+  }
+
   const sendForm = (form) => {
     const errors = validateForm(form);
     if (errors.name === null && errors.email === null && errors.message === null) {
       setFormSent(true);
       clearInputs(form);
+      postForm();
       return true;
     }
     setFormSent(false);
     return false;
   }
-
-  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -69,7 +80,8 @@ const Form = () => {
   }
 
   return (
-    <form className="form d-flex col" 
+    <form id="form"
+    className="form d-flex col" 
     method="POST"
     onSubmit={handleSubmit} noValidate
     name="contact"
