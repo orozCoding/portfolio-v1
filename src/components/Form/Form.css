@@ -1,3 +1,59 @@
 .error {
-  border: solid 2px red;
+  border: solid 1px red;
+  background-color: rgb(255, 241, 241);
+}
+
+.error-text {
+  color: red;
+}
+
+.msg-sent {
+  color: green;
+}
+
+.form {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  gap: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.form-label {
+  gap: 5px;
+  width: 100%;
+}
+
+.form input {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.form textarea {
+  min-height: 100px;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.form-btn {
+  text-align: center;
+  width: 100%;
+  border: 1px solid grey;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all linear 0.1s;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.form-btn:hover {
+  color: white;
+  background-color: var(--color-blue-dark);
+  transition: all linear 0.1s;
 }

@@ -3,9 +3,17 @@ import './Form.css';
 
 const Form = () => {
   const [ errors, setErrors ] = useState({});
+  const [formSent , setFormSent ] = useState(false);
 
-  const validateForm = (values) => {
+  const validateForm = (form) => {
+    const values = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value
+    }
+
     const {name, message, email } = values;
+
     const errors = {
       name: null,
       email: null,
@@ -30,49 +38,58 @@ const Form = () => {
     return errors;
   }
 
-  const checkSendForm = (values) => {
-    const errors = validateForm(values);
-    if (errors.name === null || errors.email === null || errors.message === null) {
+  const clearInputs = (form) => {
+    const arr = Array.from(form)
+    arr.forEach((item) => {
+      item.value = '';
+    })
+  }
+
+  const sendForm = (form) => {
+    const errors = validateForm(form);
+    if (errors.name === null && errors.email === null && errors.message === null) {
+      setFormSent(true);
+      clearInputs(form);
       return true;
     }
-    console.log('there is something wrong');
+    setFormSent(false);
     return false;
   }
 
+  
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    
     const form = e.target
 
-    const values = {
-      name: form.name.value,
-      email: form.email.value,
-      message: form.message.value
-    }
+    setErrors(validateForm(form));
 
-    setErrors(validateForm(values));
-
-    return checkSendForm(values);
+    return sendForm(form);
   }
 
   return (
     <form className="form d-flex col" 
+    method="post"
     onSubmit={handleSubmit} noValidate >
+      <input type="hidden" name="form-name" value="contact" />
+      {formSent && <p className="msg-sent">Message sent! I'll get back to you shortly.</p> }
       <label className="form-label d-flex col">
-        Name:
-        {errors.name && <p>{errors.name}</p>}
+        <strong className="form-text">Name:</strong>
+        {errors.name && <p className="error-text">{errors.name}</p>}
         <input type="text" name="name" className={errors.name ? 'error' : ''} />
       </label>
       <label className="form-label d-flex col">
-        Email:
-        {errors.email && <p>{errors.email}</p>}
+      <strong className="form-text">Email:</strong>
+        {errors.email && <p className="error-text">{errors.email}</p>}
         <input type="email" name="email" className={errors.email ? 'error' : ''} />
       </label>
       <label className="form-label d-flex col">
-        Message:
-        {errors.message && <p>{errors.message}</p>}
+        <strong className="form-text">Message:</strong>
+        {errors.message && <p className="error-text">{errors.message}</p>}
         <textarea  name="message" className={errors.message ? 'error' : ''} />
       </label>
-      <input type="submit" value="submit" />
+      <input className="form-btn click" type="submit" value="SEND" />
     </form>
   )
 }

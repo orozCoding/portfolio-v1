@@ -3,16 +3,24 @@
   background-color: var(--color-background);
   box-shadow: rgba(0, 0, 0, 0.16) 0px -3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   width: 100%;
-  justify-content: center;
   gap: 50px;
   padding: 20px 20px;
   flex-wrap: wrap;
   overflow: hidden;
+  justify-content: center;
+}
+
+.section-contact-wrapper {
+  width: 90%;
+  justify-content: space-between;
+  min-width: 400px;
+  flex-wrap: wrap;
 }
 
 .section-contact h2 {
   font-size: 40px;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .section-contact h3 {
@@ -21,15 +29,11 @@
 
 .section-contact-left,
 .section-contact-right {
-  flex: 1;
-  padding: 20px;
-}
-
-.section-contact-left {
   align-items: center;
   gap: 45px;
 }
 
+.section-contact-left,
 .section-contact-right {
   flex: 1;
 }
@@ -47,4 +51,10 @@
 .contact-info {
   gap: 20px;
   text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .section-contact-wrapper {
+    flex-direction: column;
+  }
 }
