@@ -60,9 +60,7 @@ const Form = () => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": form.getAttribute("name"),
-        ...submission,
-      }),
+        "form-name": "contact", ...submission }),
     })
       .then((resp) => console.log(resp))
       .catch((error) => alert(error));
