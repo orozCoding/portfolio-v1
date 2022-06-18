@@ -30,7 +30,7 @@
 .section-contact-left,
 .section-contact-right {
   align-items: center;
-  gap: 45px;
+  gap: 30px;
 }
 
 .section-contact-left,
@@ -56,5 +56,6 @@
 @media screen and (max-width: 1000px) {
   .section-contact-wrapper {
     flex-direction: column;
+    gap: 50px;
   }
 }
