@@ -45,24 +45,35 @@ const Form = () => {
     })
   }
 
-  const postForm = () => {
-    let myForm = document.getElementById("form");
-  let formData = new FormData(myForm);
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => console.log("Form successfully submitted"))
-    .catch((error) => alert(error));
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) =>
+          encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
   }
+  
+  const postForm = (form) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        // eslint-disable-next-line no-restricted-globals
+        ...name,
+      }),
+    })
+      .then((resp) => console.log(resp))
+      .catch((error) => alert(error));
+  };
 
   const sendForm = (form) => {
     const errors = validateForm(form);
     if (errors.name === null && errors.email === null && errors.message === null) {
       setFormSent(true);
       clearInputs(form);
-      postForm();
+      postForm(form);
       return true;
     }
     setFormSent(false);
