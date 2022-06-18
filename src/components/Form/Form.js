@@ -45,22 +45,19 @@ const Form = () => {
     })
   }
 
-  function encode(data) {
+  const encode = (data) => {
     return Object.keys(data)
-      .map(
-        (key) =>
-          encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
   }
   
-  const postForm = (form, submission) => {
+  const postForm = (submission) => {
     
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": "contact", ...submission }),
+        "form-name": "reach", ...submission }),
     })
       .then((resp) => console.log(resp))
       .catch((error) => alert(error));
@@ -71,7 +68,7 @@ const Form = () => {
     if (errors.name === null && errors.email === null && errors.message === null) {
       setFormSent(true);
       clearInputs(form);
-      postForm(form, submission);
+      postForm(submission);
       return true;
     }
     setFormSent(false);
@@ -100,8 +97,7 @@ const Form = () => {
     method="POST"
     onSubmit={handleSubmit}
     noValidate
-    name="contact"
-    data-netlify="true"
+    name="reach"
     data-aos='flip-right' data-aos-delay='100' >
       <input type="hidden" name="form-name" value="contact" />
       {formSent && <p className="msg-sent">Message sent! I'll get back to you shortly.</p> }
