@@ -15,7 +15,7 @@ const projectsArray = [
     img: './img/budgetapp.png',
     visit: null,
     demo: 'https://miplatica.herokuapp.com/',
-    repo: 'https://github.com/orozCoding/seispalabras'
+    repo: 'https://github.com/orozCoding/budget-app'
   },
   {
     title: 'Billionaires',
