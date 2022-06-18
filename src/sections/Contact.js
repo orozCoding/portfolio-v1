@@ -1,6 +1,7 @@
 import React from "react";
 import Social from "../components/Social/Social";
 import ContactInfo from "../components/Social/ContactInfo";
+import Form from "../components/Form/Form";
 import './Contact.css'
 
 const Contact = () => {
@@ -29,7 +30,7 @@ const Contact = () => {
       </div>
       <div className="section-contact-right d-flex col">
         <h2>Get in touch!</h2>
-        <p>Form</p>
+        <Form />
       </div>
     </section>
   )

@@ -99,7 +99,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @media screen and (max-height: 420px) {
