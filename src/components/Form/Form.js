@@ -59,7 +59,7 @@ const Form = () => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": form.getAttribute("contact"),
+        "form-name": form.getAttribute("name"),
         // eslint-disable-next-line no-restricted-globals
         ...name,
       }),
@@ -94,7 +94,8 @@ const Form = () => {
     <form id="form"
     className="form d-flex col" 
     method="POST"
-    onSubmit={handleSubmit} noValidate
+    onSubmit={handleSubmit}
+    noValidate
     name="contact"
     data-netlify="true"
     data-aos='flip-right' data-aos-delay='100' >
