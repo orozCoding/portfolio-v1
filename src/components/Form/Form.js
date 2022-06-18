@@ -72,6 +72,7 @@ const Form = () => {
     <form className="form d-flex col" 
     method="POST"
     onSubmit={handleSubmit} noValidate
+    name="contact"
     data-netlify="true"
     data-aos='flip-right' data-aos-delay='100' >
       <input type="hidden" name="form-name" value="contact" />
