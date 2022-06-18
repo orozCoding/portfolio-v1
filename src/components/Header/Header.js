@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import NavBar from "../NavBar/NavBar";
-import hideHeader from "../helpers";
 import './Header.css'
 
 const Header = () => {
