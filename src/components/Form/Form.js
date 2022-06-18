@@ -70,8 +70,9 @@ const Form = () => {
 
   return (
     <form className="form d-flex col" 
-    method="post"
+    method="POST"
     onSubmit={handleSubmit} noValidate
+    data-netlify="true"
     data-aos='flip-right' data-aos-delay='100' >
       <input type="hidden" name="form-name" value="contact" />
       {formSent && <p className="msg-sent">Message sent! I'll get back to you shortly.</p> }
