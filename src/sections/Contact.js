@@ -29,7 +29,7 @@ const Contact = () => {
             <ContactInfo />
           </div>
         </div>
-        <div className="section-contact-right d-flex col" data-aos='fade-right'>
+        <div className="section-contact-right d-flex col" data-aos='fade-right' data-aos-delay='300'>
           <h2>Get in touch!</h2>
           <Form />
         </div>

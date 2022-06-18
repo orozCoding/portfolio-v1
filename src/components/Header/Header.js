@@ -34,7 +34,7 @@ const Header = () => {
       onClick={() => {
         window.scrollTo(0 ,0);
       }}
-      data-aos="flip-left" data-aos-delay="1000"/>
+      data-aos="flip-left" data-aos-delay="700"/>
       <NavBar />
     </header>
   )
