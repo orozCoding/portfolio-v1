@@ -55,13 +55,18 @@ const Form = () => {
   }
   
   const postForm = (form) => {
+    const values = {
+      name: form.name.value,
+      email: form.name.value,
+      message: form.message.value
+    }
+    
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
-        // eslint-disable-next-line no-restricted-globals
-        ...name,
+        ...values,
       }),
     })
       .then((resp) => console.log(resp))
