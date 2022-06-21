@@ -18,7 +18,8 @@ const About = () => {
           <p>Formerly a Medical Doctor,
             and now a Full-stack web developer and open-source enthusiast with a love for 
             clean code and accessible design. Pair-programming and remote work aficionado. 
-            Fluent in multiple languages, frameworks, and technologies.</p>
+            Fluent in multiple languages, frameworks, and technologies. 
+            I love building digital experiences.</p>
         </div>
       </div>
     </section>
