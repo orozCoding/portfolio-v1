@@ -130,3 +130,9 @@
   }
 
 }
+
+@media screen and (max-width: 350px) {
+  .section-works {
+    font-size: 13px;
+  }
+}

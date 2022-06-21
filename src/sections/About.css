@@ -31,6 +31,7 @@
   height: 100%;
   justify-content: center;
   text-align: left;
+  gap: 15px;
 }
 
 .about-img-ctn {
@@ -47,6 +48,17 @@
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 8px, rgb(0 0 0 / 23%) 0px 3px 8px;
   padding: 4% 3% 13% 3%;
   transform: rotate(1deg);
+}
+
+
+@media screen and (max-width: 500px) {
+  .section-about h2 {
+    font-size: 30px;
+  }
+
+  .section-about {
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 1350px) {
@@ -69,5 +81,23 @@
   .section-about-left-ctn,
   .section-about-right-ctn {
     max-width: 500px;
+  }
+}
+
+
+@media screen and (orientation: portrait) {
+  section {
+    min-height: 850px;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+  .section-about h2 {
+    font-size: 22px;
+  }
+
+  .section-about {
+    font-size: 13px;
   }
 }
