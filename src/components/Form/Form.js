@@ -82,7 +82,7 @@ const Form = () => {
 
     const submission = {
       name: form.name.value,
-      email: form.name.value,
+      email: form.email.value,
       message: form.message.value
     }
 
