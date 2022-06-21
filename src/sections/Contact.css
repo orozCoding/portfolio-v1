@@ -1,7 +1,7 @@
 .section-contact {
   /* box shadow */
   background-color: var(--color-background);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px -3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.23) 0px 3px 6px;
   width: 100%;
   gap: 50px;
   padding: 20px 20px;
