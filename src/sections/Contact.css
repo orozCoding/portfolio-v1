@@ -67,3 +67,15 @@ and (min-height: 800px) {
     height: 800px;
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .section-contact-wrapper {
+    justify-content: center;
+  }
+  
+  .section-contact-left,
+  .section-contact-right {
+    max-width: 900px;
+  }
+
+}
