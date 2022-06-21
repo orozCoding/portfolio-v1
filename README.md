@@ -4,9 +4,7 @@ My first portfolio built with React. It showcases my recent projects and provide
 
 ### Preview
 
-![alt text](https://github.com/orozCoding/budget-app/blob/dev/app/assets/images/p1.png?raw=true)
-![alt text](https://github.com/orozCoding/budget-app/blob/dev/app/assets/images/p2.png?raw=true)
-![alt text](https://github.com/orozCoding/budget-app/blob/dev/app/assets/images/p3.png?raw=true)
+[![mockup-portfolio.png](https://i.postimg.cc/NMQLZWLt/mockup-portfolio.png)](https://postimg.cc/d7SqyN8N)
 
 ## Live Version
 
