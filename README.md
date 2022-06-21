@@ -4,7 +4,7 @@ My first portfolio built with React. It showcases my recent projects and provide
 
 ### Preview
 
-[![mockup-portfolio.png](https://i.postimg.cc/NMQLZWLt/mockup-portfolio.png)](https://postimg.cc/d7SqyN8N)
+[![real-mockup.png](https://i.postimg.cc/QtjRLr5j/real-mockup.png)](https://postimg.cc/GBSMYVqf)
 
 ## Live Version
 
