@@ -17,7 +17,7 @@ const Contact = () => {
           <div className="contact-resume d-flex col">
             <h3>Resume</h3>
             <a className="resume-btn d-flex click"
-              href='https://drive.google.com/file/d/15HuFyk5dGVYiKsEPJeqg9k7j1XGW1bRs/view?usp=sharing'
+              href='https://drive.google.com/file/d/1GPImP_WCFiKQyeDH_xK98E-xdF9hlg8U/view?usp=sharing'
               target="_blank" rel="noreferrer"
             >
               <img src="./icons/googledrive.svg" alt="Google Drive" />
