@@ -16,10 +16,9 @@ const About = () => {
             <h2> I'm Angel Orozco </h2>
           </div>
           <p>Formerly a Medical Doctor,
-            and now a passionate Full-stack developer.
-            I love building useful digital products and experiences,
-            always focused on a simple and very clean design,
-            prioritizing a good user experience.</p>
+            and now a Full-stack web developer and open-source enthusiast with a love for 
+            clean code and accessible design. Pair-programming and remote work aficionado. 
+            Fluent in multiple languages, frameworks, and technologies.</p>
         </div>
       </div>
     </section>
