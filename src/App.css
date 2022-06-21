@@ -99,6 +99,7 @@ body::-webkit-scrollbar-thumb {
 
 section {
   min-height: 100vh;
+  overflow: hidden;
 }
 
 @media screen and (orientation: portrait) {
