@@ -1,6 +1,6 @@
 # Portfolio V1
 
-My first portfolio built with React. It showcases my recent projects and provides my contact information. I created a simple but good looking and very responsive design.
+My portfolio built with React. It showcases my recent projects and provides my contact information. I created a simple but good looking and very responsive design.
 
 ### Preview
 
