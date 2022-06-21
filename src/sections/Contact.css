@@ -13,6 +13,7 @@
   width: 90%;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .section-contact h2 {
@@ -55,5 +56,14 @@
   .section-contact-wrapper {
     flex-direction: column;
     gap: 50px;
+  }
+}
+
+
+@media screen and (min-width: 1000px ) 
+and (min-height: 800px) {
+  .section-contact {
+    min-height: 0vh;
+    height: 800px;
   }
 }
