@@ -32,7 +32,7 @@ const Form = () => {
     }
 
     if(message === '' || message === null || message === undefined || message.length < 3) {
-      errors.message = 'Please enter a valid name';
+      errors.message = 'Please enter a valid message';
     }
     
     return errors;
