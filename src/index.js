@@ -16,9 +16,6 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
-      {setTimeout(() => {
-        return <App />
-      }, 2000)}
     </Provider>
   </React.StrictMode>
 );
