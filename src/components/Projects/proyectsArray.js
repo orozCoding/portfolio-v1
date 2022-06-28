@@ -2,9 +2,9 @@ const projectsArray = [
   {
     title: 'Seis Palabras',
     description: 'Web app where Spanish students can practice translating six words every day. The student is able to create an account and keep track of its progress.',
-    stack: [{t: 'React', i: './icons/react.svg'}, {t: 'Redux', i: './icons/redux.svg'}],
+    stack: [{t: 'React', i: './icons/react.svg'}, {t: 'Redux', i: './icons/redux.svg'}, {t: 'Ruby', i: './icons/ruby.svg'}, {t: 'Rails', i: './icons/rubyonrails.svg'}],
     img: './img/seispalabras.png',
-    visit: 'https://seispalabras.netlify.app/',
+    visit: 'https://seispalabras.xyz/',
     demo: null,
     repo: 'https://github.com/orozCoding/seispalabras'
   },
