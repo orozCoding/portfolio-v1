@@ -30,8 +30,13 @@
 .section-about-right-ctn {
   height: 100%;
   justify-content: center;
+  align-items: flex-start;
   text-align: left;
-  gap: 15px;
+  gap: 30px;
+}
+
+.section-about-right-ctn .social-icon {
+  width: 30px;
 }
 
 .about-img-ctn {
@@ -48,6 +53,10 @@
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 8px, rgb(0 0 0 / 23%) 0px 3px 8px;
   padding: 4% 3% 13% 3%;
   transform: rotate(1deg);
+}
+
+.about-i-am {
+  margin-bottom: -12px;
 }
 
 
@@ -101,3 +110,6 @@
     font-size: 13px;
   }
 }
+
+/* social media icons */
+

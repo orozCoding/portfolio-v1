@@ -1,4 +1,5 @@
 import React from "react";
+import Social from "../components/Social/Social";
 import './About.css'
 
 const About = () => {
@@ -13,13 +14,16 @@ const About = () => {
         <div className="section-about-right-ctn d-flex col" data-aos="fade-left" data-aos-delay="400">
           <div className="hello-ctn d-flex col">
             <h2 className="about-hola">¡Hola!</h2>
-            <h2> I'm Angel Orozco </h2>
+            <h2 className="about-i-am"> I'm Angel Orozco </h2>
           </div>
-          <p>Formerly a Medical Doctor,
-            and now a Full-stack web developer and open-source enthusiast with a love for 
-            clean code and accessible design. Pair-programming and remote work aficionado. 
-            Fluent in multiple languages, frameworks, and technologies. 
-            I love building digital experiences.</p>
+          <p>
+            Formerly a Medical Doctor,
+            and now a Full-stack web developer and open-source enthusiast with a love for
+            clean code and accessible design. Pair-programming and remote work aficionado.
+            Fluent in multiple languages, frameworks, and technologies.
+            I love building digital experiences.
+          </p>
+          <Social />
         </div>
       </div>
     </section>
