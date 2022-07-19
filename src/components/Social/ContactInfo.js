@@ -5,7 +5,7 @@ const ContactInfo = () => {
 
   const info = [
     {
-      t: 'Number',
+      t: 'Phone',
       i: 'bi bi-telephone-fill',
       d: '+584128654729',
       u: 'tel:+584128654729'
