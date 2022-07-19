@@ -5,7 +5,7 @@ const menuItems = [
     cName: 'nav-item click'
   },
   {
-    title: 'WORKS',
+    title: 'WORK',
     refId: 'section-works',
     cName: 'nav-item click'
   },

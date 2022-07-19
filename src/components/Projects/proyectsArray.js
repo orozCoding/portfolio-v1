@@ -1,7 +1,7 @@
 const projectsArray = [
   {
     title: 'Seis Palabras',
-    description: 'Web app where Spanish students can practice translating six words every day. The student is able to create an account and keep track of its progress.',
+    description: 'Web app where Spanish students can practice translating six words every day. The students are able to create an account and keep track of their progress.',
     stack: [{t: 'React', i: './icons/react.svg'}, {t: 'Redux', i: './icons/redux.svg'}, {t: 'Ruby', i: './icons/ruby.svg'}, {t: 'Rails', i: './icons/rubyonrails.svg'}],
     img: './img/seispalabras.png',
     visit: 'https://seispalabras.xyz/',
@@ -10,7 +10,7 @@ const projectsArray = [
   },
   {
     title: 'Budget App',
-    description: 'Mobile web app to track how much money the user spend. User may create, update and remove many categories and transactions related to those categories.',
+    description: 'Mobile web app to track how much money the user spends. Users may create, update and remove many categories and transactions related to those categories.',
     stack: [{t: 'Ruby', i: './icons/ruby.svg'}, {t: 'Rails', i: './icons/rubyonrails.svg'}],
     img: './img/budgetapp.png',
     visit: null,
@@ -19,7 +19,7 @@ const projectsArray = [
   },
   {
     title: 'Billionaires',
-    description: 'Collaborative capstone project prior my Full-stack Software Developer certificate. It is a web-app to book appointments with billionaires!',
+    description: 'Collaborative final project prior my Full-stack Software Developer certificate. It is a web-app to book appointments with billionaires!',
     stack: [{t: 'React', i: './icons/react.svg'}, {t: 'Redux', i: './icons/redux.svg'}, {t: 'Ruby', i: './icons/ruby.svg'}, {t: 'Rails', i: './icons/rubyonrails.svg'}],
     img: './img/billionaires.png',
     visit: null,
