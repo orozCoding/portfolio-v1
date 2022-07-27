@@ -1,7 +1,7 @@
 const projectsArray = [
   {
     title: 'Seis Palabras',
-    description: 'Web app where Spanish students can practice translating six words every day. The students are able to create an account and keep track of their progress.',
+    description: 'Full-stack web app where Spanish students can practice translating six words every day. The students are able to create an account and keep track of their progress.',
     stack: [{t: 'React', i: './icons/react.svg'}, {t: 'Redux', i: './icons/redux.svg'}, {t: 'Ruby', i: './icons/ruby.svg'}, {t: 'Rails', i: './icons/rubyonrails.svg'}],
     img: './img/seispalabras.png',
     visit: 'https://seispalabras.xyz/',
@@ -10,12 +10,21 @@ const projectsArray = [
   },
   {
     title: 'Budget App',
-    description: 'Mobile web app to track how much money the user spends. Users may create, update and remove many categories and transactions related to those categories.',
+    description: 'Full-stack mobile web app to track how much money the user spends. Users may create, update and remove many categories and transactions related to those categories.',
     stack: [{t: 'Ruby', i: './icons/ruby.svg'}, {t: 'Rails', i: './icons/rubyonrails.svg'}],
     img: './img/budgetapp.png',
     visit: null,
     demo: 'https://miplatica.herokuapp.com/',
     repo: 'https://github.com/orozCoding/budget-app'
+  },
+  {
+    title: 'Angel Spanish',
+    description: 'Landing page of a Spanish Tutor (🙋‍♂️). Display information about the lessons, show student reviews and provide contact information.',
+    stack: [{t: 'React', i: './icons/react.svg'}, {t: 'CSS3', i: './icons/css3.svg'}],
+    img: 'https://raw.githubusercontent.com/orozCoding/myhost/main/angelspanish/prev.png',
+    visit: 'https://www.angelspanish.com',
+    demo: null,
+    repo: 'https://github.com/orozCoding/angelspanish'
   },
   {
     title: 'Billionaires',

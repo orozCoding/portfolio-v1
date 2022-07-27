@@ -146,3 +146,18 @@
     max-height: 600px;
   }
 }
+
+@media screen and (max-height: 650px) {
+  .swiper {
+    height: 500px;
+    max-height: 500px;
+  }
+
+  .slice-title {
+    font-size: 23px;
+  }
+
+  .slice-description {
+    font-size: 15px;
+  }
+}
